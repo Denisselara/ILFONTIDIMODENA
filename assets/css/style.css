@@ -1,22 +1,23 @@
 @font-face {
-  font-family: 'icomoon';
-  src: url("/assets/fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-family: "icomoon";
+  src: url("assets/fonts/icomoon/icomoon.eot");
+  src: url("assets/fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("assets/fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("assets/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("assets/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style
-*
-* ======================================================= */
+
+@font-face { font-family: 'ProximaNovaBold'; src: url('../fonts/proxima_nova_cond_bold.ttf'); }
+@font-face { font-family: 'ProximaNovaBlack'; src: url('../fonts/Proxima-Nova-Cond-Black.woff');}
+@font-face { font-family: 'ProximaNovaLight'; src: url('../fonts/Proxima-Nova-Cond-Light.woff');}
+
+
 body {
-  font-family: "Merriweather", serif;
+  font-family:;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #777;
-  background: #fff;
+  color: #000000;
+  background: #FFFFFF;
 }
 
 #page {
@@ -27,6 +28,7 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+
 }
 .offcanvas #page {
   overflow: hidden;
@@ -47,13 +49,12 @@ body {
 }
 
 a {
-  color: #52D681;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #52D681;
+  color: #CC1924;
   outline: none;
   text-decoration: none;
 }
@@ -62,28 +63,47 @@ p {
   margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
-  font-family: "Montserrat", sans-serif;
+h1, h2, h3, h5, h6, figure {
+  color: #CC1924;
+  font-family: ;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
+h4{
+  color: #000000;
+}
+
 ::-webkit-selection {
-  color: #fff;
+  color: #CC1924;
   background: #52D681;
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: #CC1924;
   background: #52D681;
 }
 
 ::selection {
-  color: #fff;
-  background: #52D681;
+  color: #CC1924;
+
 }
 
+.gtco-nav {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  padding: 2vh;
+  z-index: 1001;
+}
+@media screen and (max-width: 768px) {
+  .gtco-nav {
+    padding: 2vh;
+    border-bottom: 1px solid #666666;
+  }
+}
+
+/*
 .gtco-container {
   max-width: 1140px;
   position: relative;
@@ -96,7 +116,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   top: 0;
   margin: 0;
-  padding: 0;
+  padding:0;
   width: 100%;
   padding: 30px 0;
   z-index: 1001;
@@ -107,20 +127,21 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 10px 0;
     border-bottom: 1px solid #666666;
   }
-}
+}*/
 .gtco-nav #gtco-logo {
-  font-size: 20px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
 }
 .gtco-nav #gtco-logo a {
-  color: #000;
+  color: red;
 }
 .gtco-nav #gtco-logo em {
   color: #fff;
 }
+
 @media screen and (max-width: 768px) {
   .gtco-nav .menu-1, .gtco-nav .menu-2 {
     display: none;
@@ -146,14 +167,16 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-nav ul li a {
   font-size: 16px;
   padding: 30px 10px;
-  color: #cccccc;
+  color: #000000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 .gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
-  color: #000;
+  color: #CC1924;
 }
+
+/*
 .gtco-nav ul li.has-dropdown {
   position: relative;
 }
@@ -169,7 +192,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  /* Better Font Rendering ===========
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
@@ -179,7 +202,8 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: -7px;
   right: 0;
   color: #ccc;
-}
+}*/
+
 .gtco-nav ul li.has-dropdown .dropdown {
   width: 130px;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
@@ -234,7 +258,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .gtco-nav ul li.has-dropdown .dropdown li.active > a {
-  color: #000 !important;
+  color: yellow !important;
 }
 .gtco-nav ul li.has-dropdown:hover a, .gtco-nav ul li.has-dropdown:focus a {
   color: #000;
@@ -292,6 +316,9 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
   position: relative;
+}
+
+.gtco-item{
 }
 
 .gtco-cover {
@@ -396,7 +423,8 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
   width: 100%;
   padding: 3em 0;
-  background: #f6f6f6;
+
+  background-color: #000000;
 }
 .gtco-client .client img {
   margin-top: 10px;
@@ -440,12 +468,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 20px;
   font-size: 12px;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
 }
 
 #gtco-footer {
   background: #262626;
-  padding: 7em 0 0 0 !important;
+  padding: 3em 0 0 0 !important;
   margin-bottom: 0 !important;
   width: 100%;
   float: left;
@@ -567,7 +594,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #777;
 }
 .gtco-staff .role, .gtco-item .role {
-  color: #bfbfbf;
+  color: #707070;
   margin-bottom: 20px;
   font-weight: normal;
   display: block;
@@ -587,10 +614,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-staff .fh5co-social li a, .gtco-item .fh5co-social li a {
   font-size: 20px;
-  color: #52d681;
+  color: #707070;
 }
 .gtco-staff .fh5co-social li a:hover, .gtco-item .fh5co-social li a:hover {
-  color: #000;
+  color: #707070;
 }
 
 .gtco-news ul {
@@ -613,7 +640,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  color: #52D681;
+  color: #707070;
 }
 .gtco-news ul li a .post-date {
   text-transform: uppercase;
@@ -626,13 +653,13 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 100;
 }
 .gtco-news ul li a p {
-  color: gray;
+  color: #707070;
 }
 .gtco-news ul li a p:last-child {
   margin-bottom: 0;
 }
 .gtco-news ul li a:hover h3 {
-  color: #000;
+  color: #707070;
 }
 
 .gtco-social-icons {
@@ -653,7 +680,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #52D681;
+  color: #707070;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -678,7 +705,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .gtco-contact-info ul li:before {
-  color: #cccccc;
+  color: #707070;
   position: absolute;
   left: 0;
   top: .05em;
@@ -773,7 +800,7 @@ form label {
 .gtco-cover .display-tc h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: green;
 }
 #gtco-header .display-tc h1,
 #gtco-counter .display-tc h1,
@@ -805,7 +832,7 @@ form label {
 #gtco-counter .counter {
   font-size: 50px;
   margin-bottom: 10px;
-  color: #52D681;
+  color: #CC1924;
   font-weight: 100;
   display: block;
 }
@@ -839,7 +866,6 @@ form label {
 }
 
 .gtco-section {
-  padding: 3em 0;
   clear: both;
   position: relative;
 }
@@ -856,7 +882,8 @@ form label {
 }
 
 .gtco-heading {
-  margin-bottom: 5em;
+  width: 100%;
+  margin-bottom: 2em;
 }
 .gtco-heading.gtco-heading-sm {
   margin-bottom: 2em;
@@ -865,13 +892,14 @@ form label {
   font-size: 40px;
   margin-bottom: 10px;
   line-height: 1.5;
-  color: #4d4d4d;
-  font-weight: 300;
+  color: #FFFFFF;
+  background-color: #CC1924;
+  font-family: 'ProximaNovaBlack',sans-serif;
 }
 .gtco-heading p {
   font-size: 18px;
   line-height: 1.7;
-  color: #898989;
+  color: #000000;
 }
 
 blockquote {
@@ -880,18 +908,19 @@ blockquote {
 }
 blockquote p {
   font-style: italic;
-  color: #000;
+  color: #000000;
 }
 blockquote p > cite {
   font-size: 14px;
-  color: #b3b3b3;
+  color: #000000;
 }
 
 #gtco-offcanvas {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: #CC1924;
+  color: white;
   top: 0;
   right: 0;
   top: 0;
@@ -1031,7 +1060,7 @@ blockquote p > cite {
   text-decoration: none;
 }
 .gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
-  background: #444;
+  background: #000000;
 }
 .gtco-nav-toggle:hover, .gtco-nav-toggle:focus, .gtco-nav-toggle:active {
   outline: none;
@@ -1042,28 +1071,28 @@ blockquote p > cite {
   display: inline-block;
   width: 25px;
   height: 2px;
-  color: #252525;
+  color: #000000;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #252525;
+  background: #000000;
   transition: all .2s ease-out;
 }
 .gtco-nav-toggle i::before, .gtco-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 2px;
-  background: #252525;
+  background: #000000;
   position: absolute;
   left: 0;
   transition: all .2s ease-out;
 }
 .gtco-nav-toggle.gtco-nav-white > i {
-  color: #fff;
-  background: #fff;
+  color: #CC1924;
+  background: #CC1924;
 }
 .gtco-nav-toggle.gtco-nav-white > i::before, .gtco-nav-toggle.gtco-nav-white > i::after {
-  background: #fff;
+  background: #CC1924;
 }
 
 .gtco-nav-toggle i::before {
@@ -1106,8 +1135,8 @@ blockquote p > cite {
 
 .gtco-nav-toggle {
   position: absolute;
-  right: 0px;
-  top: 8px;
+  right: 15px;
+  top: 10px;
   z-index: 21;
   padding: 6px 0 0 0;
   display: block;
@@ -1638,5 +1667,29 @@ blockquote p > cite {
   background: none;
   background: #4d4d4d;
 }
+
+.padding_right{
+  padding-right: 5vh;
+}
+
+.footer2{
+  color: #FFFFFF;
+  padding-left: 5vh;
+}
+
+.titulos-carta{
+  padding-left: 5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: #E6E6E6;
+  text-align: center;
+}
+
+.container_platos{
+  padding-left: 5vh;
+  padding-right: 5vh;
+  border-bottom: solid 1px #707070;
+}
+
 
 /*# sourceMappingURL=style.css.map */
