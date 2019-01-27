@@ -22,6 +22,11 @@ body {
 
 }
 
+.fixed{
+  position: fixed;
+  top:0;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -95,23 +100,25 @@ h4{
   position: relative;
   margin: 0;
   width: 100%;
-  padding: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   z-index: 1001;
+  padding-top: 5vh;
 }
 @media screen and (max-width: 768px) {
   .gtco-nav {
-    padding: 2vh;
+
     border-bottom: 1px solid #666666;
   }
 }
 
-/*
+
 .gtco-container {
-  max-width: 1140px;
-  position: relative;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+}
+
+.fondo_blanco{
+  background-color: white;
 }
 
 .gtco-nav {
@@ -120,16 +127,14 @@ h4{
   margin: 0;
   padding:0;
   width: 100%;
-  padding: 30px 0;
   z-index: 1001;
-  font-family: "Montserrat", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .gtco-nav {
-    padding: 10px 0;
+
     border-bottom: 1px solid #666666;
   }
-}*/
+}
 .gtco-nav #gtco-logo {
   font-size: 30px;
   margin: 0;
@@ -1720,4 +1725,24 @@ blockquote p > cite {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+.color_white{
+  color: #FFFFFF;
+  font-family: 'ProximaNovaBold';
+}
+
+.color_white a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.color_white a:hover{
+  color: #CC1924 !important;
+}
+
+.padding_right2{
+  padding-right: 2vh;
+}
+
+.padding_top{
+  padding-top: 4vh;
+}
