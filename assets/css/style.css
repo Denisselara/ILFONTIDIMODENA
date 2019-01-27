@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "icomoon";
-  src: url("assets/fonts/icomoon/icomoon.eot");
-  src: url("assets/fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("assets/fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("assets/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("assets/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-family: 'icomoon';
+  src: url("../../fonts/icomoon/icomoon.eot");
+  src: url("../../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face { font-family: 'ProximaNovaBold'; src: url('../fonts/proxima_nova_cond_bold.ttf'); }
-@font-face { font-family: 'ProximaNovaBlack'; src: url('../fonts/Proxima-Nova-Cond-Black.woff');}
-@font-face { font-family: 'ProximaNovaLight'; src: url('../fonts/Proxima-Nova-Cond-Light.woff');}
+@font-face { font-family: 'ProximaNovaBold'; src: url('../fonts/proxima-nova/proxima_nova_cond_bold.ttf'); }
+@font-face { font-family: 'ProximaNovaBlack'; src: url('../fonts/proxima-nova/Proxima-Nova-Cond-Black.otf');}
+@font-face { font-family: 'ProximaNovaLight'; src: url('../fonts/proxima-nova/Proxima-Nova-Cond-Light.otf');}
 
 
 body {
@@ -18,6 +18,8 @@ body {
   line-height: 1.7;
   color: #000000;
   background: #FFFFFF;
+  font-family: 'ProximaNovaLight' sans-serif;
+
 }
 
 #page {
@@ -65,7 +67,7 @@ p {
 
 h1, h2, h3, h5, h6, figure {
   color: #CC1924;
-  font-family: ;
+  font-family: 'ProximaNovaBlack' sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -157,7 +159,6 @@ h4{
   list-style: none;
   display: inline;
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
 }
 .gtco-nav ul li > a {
   text-transform: uppercase;
@@ -519,7 +520,6 @@ h4{
 #gtco-footer .gtco-footer-link .gtco-list-link li a {
   text-transform: uppercase;
   font-size: 13px !important;
-  font-family: "Montserrat", sans-serif;
 }
 #gtco-footer .gtco-footer-subscribe {
   padding-left: 30px;
@@ -553,7 +553,6 @@ h4{
   width: 100%;
 }
 #gtco-footer .gtco-copyright p {
-  font-family: "Montserrat", sans-serif;
 }
 #gtco-footer .gtco-copyright p:last-child {
   margin-bottom: 0;
@@ -597,12 +596,6 @@ h4{
   display: block;
 }
 
-.gtco-item2 .role2 {
-  color: #FFFFFF;
-  margin-bottom: 20px;
-  font-weight: normal;
-  display: block;
-}
 .gtco-staff .fh5co-social, .gtco-item .fh5co-social {
   padding: 0;
   margin: 0;
@@ -649,15 +642,14 @@ h4{
 .gtco-news ul li a .post-date {
   text-transform: uppercase;
   letter-spacing: .05em;
-  color: #b3b3b3;
-  font-family: "Montserrat", sans-serif;
+  color: yellow;
   margin-bottom: 10px;
   display: block;
   font-size: 12px;
   font-weight: 100;
 }
 .gtco-news ul li a p {
-  color: #707070;
+  color: yellow;
 }
 .gtco-news ul li a p:last-child {
   margin-bottom: 0;
@@ -898,7 +890,7 @@ form label {
   line-height: 1.5;
   color: #FFFFFF;
   background-color: #CC1924;
-  font-family: 'ProximaNovaBlack',sans-serif;
+  font-family: 'ProximaNovaLight' sans-serif;
 }
 .gtco-heading p {
   font-size: 18px;
@@ -1687,16 +1679,9 @@ blockquote p > cite {
   padding-bottom: 1vh;
   background-color: #E6E6E6;
   text-align: center;
+  font-family: 'ProximaNovaBold';
 }
 
-.titulos-carta2{
-  padding-left: 5vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  background-color: #8A0829;
-  text-align: center;
-  color: white;
-}
 
 .container_platos{
   padding-left: 5vh;
@@ -1704,21 +1689,9 @@ blockquote p > cite {
   border-bottom: solid 1px #707070;
 }
 
-.container_platos2{
-  padding-left: 5vh;
-  padding-right: 5vh;
-  border-bottom: solid 1px #FFFFFF;
-}
 
 .center{
   text-align: center;
-}
-
-.pizzas{
-  background-color: #CC1924;
-  color: #FFFFFF;
-  padding-top: 5vh;
-  padding-bottom: 8vh;
 }
 
 .space{
@@ -1729,6 +1702,12 @@ blockquote p > cite {
   background-color: #FAFAFA;
   padding: 10vh;
   color: #000000;
+
+}
+
+.black-tipo{
+  font-family: 'ProximaNovaBlack';
+
 }
 
 .reservas a{
