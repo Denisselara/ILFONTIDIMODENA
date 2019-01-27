@@ -64,16 +64,15 @@
                     ?>
 
                       <div class="item">
-                        <div class="gtco-item">
-                        <a class="portfolio-box" href="<?php the_post_thumbnail_url( 'large' ); ?>">
-                          <?php the_post_thumbnail( '', array( 'class' => 'img-fluid' ) ); ?>
-                          <div class="container_platos">
+                        <div class="gtco-item" href="<?php the_post_thumbnail_url( 'large' ); ?>">
+                          <?php the_post_thumbnail( '', array( 'class' => 'img-responsive' ) ); ?>
+                          <h4 class="container_platos">
 
                                   <?php the_title() ?>
-                                </div>
-                                <div class="role">
+                                </h4>
+                                <p class="role">
                                   <?php the_content() ?>
-                                </div>
+                                </p>
                               </div>
                           </div>
                         </a>
@@ -91,7 +90,7 @@
 
             </div>
 
-            </div>
+
           </div><!--CIERRE ROW-->
 
           <div class="row">
