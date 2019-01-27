@@ -318,9 +318,6 @@ h4{
   position: relative;
 }
 
-.gtco-item{
-}
-
 .gtco-cover {
   height: 900px;
   background-size: cover;
@@ -434,7 +431,7 @@ h4{
   *display: inline;
 }
 
-.gtco-testimonial .gtco-testimony {
+/*.gtco-testimonial .gtco-testimony {
   float: left;
   width: 100%;
   margin-bottom: 30px;
@@ -468,7 +465,7 @@ h4{
   margin-top: 20px;
   font-size: 12px;
   font-weight: 700;
-}
+}*/
 
 #gtco-footer {
   background: #262626;
@@ -595,6 +592,13 @@ h4{
 }
 .gtco-staff .role, .gtco-item .role {
   color: #707070;
+  margin-bottom: 20px;
+  font-weight: normal;
+  display: block;
+}
+
+.gtco-item2 .role2 {
+  color: #FFFFFF;
   margin-bottom: 20px;
   font-weight: normal;
   display: block;
@@ -1685,11 +1689,56 @@ blockquote p > cite {
   text-align: center;
 }
 
+.titulos-carta2{
+  padding-left: 5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: #8A0829;
+  text-align: center;
+  color: white;
+}
+
 .container_platos{
   padding-left: 5vh;
   padding-right: 5vh;
   border-bottom: solid 1px #707070;
 }
 
+.container_platos2{
+  padding-left: 5vh;
+  padding-right: 5vh;
+  border-bottom: solid 1px #FFFFFF;
+}
+
+.center{
+  text-align: center;
+}
+
+.pizzas{
+  background-color: #CC1924;
+  color: #FFFFFF;
+  padding-top: 5vh;
+  padding-bottom: 8vh;
+}
+
+.space{
+  height: 30px;
+}
+
+.reservas{
+  background-color: #FAFAFA;
+  padding: 10vh;
+  color: #000000;
+}
+
+.reservas a{
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.reservas a:hover{
+  color: #CC1924 !important;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
