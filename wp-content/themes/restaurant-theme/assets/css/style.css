@@ -919,7 +919,7 @@ blockquote p > cite {
 #gtco-offcanvas {
   position: absolute;
   z-index: 1901;
-  width: 270px;
+  width: 100%;
   background: #CC1924;
   color: white;
   top: 0;
@@ -1054,7 +1054,9 @@ blockquote p > cite {
   outline: none;
 }
 
+
 .gtco-nav-toggle {
+  position: fixed;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -1068,7 +1070,7 @@ blockquote p > cite {
   border-bottom: none !important;
 }
 .gtco-nav-toggle i {
-  position: relative;
+  position: fixed;
   display: inline-block;
   width: 25px;
   height: 2px;
@@ -1135,16 +1137,17 @@ blockquote p > cite {
 }
 
 .gtco-nav-toggle {
-  position: absolute;
+  position: fixed;
   right: 15px;
   top: 10px;
   z-index: 21;
   padding: 6px 0 0 0;
+  margin-top: 24vh;
   display: block;
   margin: 0 auto;
   display: none;
   height: 44px;
-  width: 44px;
+  width: 100%;
   z-index: 2001;
   border-bottom: none !important;
 }
@@ -1704,16 +1707,26 @@ blockquote p > cite {
 }
 
 .reservas{
-  background-color: #FAFAFA;
+
+  background-image: url('../img/sitio/cena.jpg');
   padding: 10vh;
-  color: #000000;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
+
+/*.form-transparente{
+  position: absolute;
+  background-color: white;
+  opacity: 0.5;
+}*/
 
 .black-tipo{
   font-family: 'ProximaNovaBlack';
 
 }
+
 
 .reservas a{
   color: #000000 !important;

@@ -8,14 +8,18 @@
   </head>
 <body>
 
+  <div class="gtco-loader"></div>
 
+  <div id="page">
   <!-- navegación-->
     <nav class="gtco-nav" role="navigation">
       <div class="gtco-container fixed">
 
         <div class="row fondo_blanco">
           <div class="col-sm-2 col-xs-10">
-            <div id="gtco-logo"><a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/marca/logo.png" alt="logo" class="img-responsive"></div>
+
+
+            <div id="gtco-logo"> <a href="index.html"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/marca/logo.png" alt="logo" class="img-responsive"></div>
           </div>
 
 
@@ -28,7 +32,7 @@
                 <a href="#carta">La Carta</a>
               </li>
 
-              <li><a href="#reservas">Reservas</a></li>
+              <li><a href="#reserva">Reservas</a></li>
               <li><a href="#gtco-footer">Contacto</a></li>
             </ul>
           </div>

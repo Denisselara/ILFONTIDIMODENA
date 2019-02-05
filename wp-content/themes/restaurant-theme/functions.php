@@ -62,10 +62,12 @@
   add_action( 'after_setup_theme',
 'menus_setup' )*/
 
+?>
 
+
+<?php
 // Register Custom Post Type
 function products_post_type() {
-
 	$labels = array(
 		'name'                  => _x( 'Products', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'Product', 'Post Type Singular Name', 'text_domain' ),
@@ -85,7 +87,7 @@ function products_post_type() {
 		'search_items'          => __( 'Search products', 'text_domain' ),
 		'not_found'             => __( 'No products found', 'text_domain' ),
 		'not_found_in_trash'    => __( 'No products found in Trash', 'text_domain' ),
-		'featured_image'        => _x( 'Featured Image', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
 		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
 		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
 		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
@@ -115,7 +117,26 @@ function products_post_type() {
 		'capability_type'       => 'page',
 	);
 	register_post_type( 'product', $args );
-
 }
 add_action( 'init', 'products_post_type', 0 );
+?>
+
+<?php
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home right sidebar',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
 ?>
