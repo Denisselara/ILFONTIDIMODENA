@@ -917,7 +917,7 @@ blockquote p > cite {
 }
 
 #gtco-offcanvas {
-  position: absolute;
+  position: fixed;
   z-index: 1901;
   width: 100%;
   background: #CC1924;
@@ -925,15 +925,14 @@ blockquote p > cite {
   top: 0;
   right: 0;
   top: 0;
-  bottom: 0;
   padding: 45px 40px 40px 40px;
   overflow-y: auto;
   display: none;
-  -moz-transform: translateX(270px);
-  -webkit-transform: translateX(270px);
-  -ms-transform: translateX(270px);
-  -o-transform: translateX(270px);
-  transform: translateX(270px);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1056,7 +1055,7 @@ blockquote p > cite {
 
 
 .gtco-nav-toggle {
-  position: fixed;
+  position: absolute;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -1070,7 +1069,7 @@ blockquote p > cite {
   border-bottom: none !important;
 }
 .gtco-nav-toggle i {
-  position: fixed;
+  position: relative;
   display: inline-block;
   width: 25px;
   height: 2px;
